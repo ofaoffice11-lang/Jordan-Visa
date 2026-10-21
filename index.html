@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-VISA - The Hashemite Kingdom of Jordan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            background: #fff;
+            margin: auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .header img {
+            height: 60px;
+        }
+        .title-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .title-section h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .welcome-text {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Brush Script MT', cursive, sans-serif;
+            font-size: 22px;
+            color: #b8860b;
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th {
+            background-color: #6c757d;
+            color: white;
+            padding: 8px;
+            font-size: 14px;
+        }
+        td {
+            border: 1px solid #dee2e6;
+            padding: 8px;
+            font-size: 13px;
+        }
+        .td-label {
+            font-weight: bold;
+            width: 25%;
+        }
+        .td-value {
+            text-align: center;
+            width: 50%;
+        }
+        .td-label-ar {
+            text-align: right;
+            font-weight: bold;
+            width: 25%;
+            direction: rtl;
+        }
+        .notes {
+            font-size: 11px;
+            line-height: 1.5;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .notes-left { width: 48%; }
+        .notes-right { width: 48%; text-align: right; direction: rtl; }
+        .footer {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .no-print {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .btn-download {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        @media print {
+            .no-print { display: none; }
+            body { padding: 0; background: #fff; }
+            .container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="no-print">
+        <button class="btn-download" onclick="window.print()">Download / Print PDF</button>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <strong style="color: #c0392b; font-size: 20px;">eVISA</strong><br>
+                <small style="color: #27ae60;">Jordan تأشيرة إلكترونية</small>
+            </div>
+            <div style="text-align: center;">
+                <h3 style="margin:0;">المملكة الأردنية الهاشمية - وزارة الداخلية</h3>
+                <small>The Hashemite Kingdom of Jordan - Ministry of Interior</small>
+            </div>
+        </div>
+
+        <!-- Title -->
+        <div class="title-section">
+            <h1>e-VISA - تأشيرة إلكترونية</h1>
+        </div>
+
+        <div class="welcome-text">
+            <span>Welcome to Jordan</span>
+            <span>اهلا وسهلا بكم في الأردن</span>
+        </div>
+
+        <!-- Visa Information Table -->
+        <table>
+            <tr>
+                <th colspan="3">Visa Information - معلومات التأشيرة</th>
+            </tr>
+            <tr>
+                <td class="td-label">Visa Number</td>
+                <td class="td-value">689362366</td>
+                <td class="td-label-ar">رقم التأشيرة</td>
+            </tr>
+            <tr>
+                <td class="td-label">Visa Type</td>
+                <td class="td-value">Work Visa - تأشيرة عمل</td>
+                <td class="td-label-ar">نوع التأشيرة</td>
+            </tr>
+            <tr>
+                <td class="td-label">Date of Issue</td>
+                <td class="td-value">12/10/2026</td>
+                <td class="td-label-ar">تاريخ الإصدار</td>
+            </tr>
+            <tr>
+                <td class="td-label">Visa Period</td>
+                <td class="td-value">Three Months - Double Entry - ثلاثة أشهر - الدخول المزدوج</td>
+                <td class="td-label-ar">مدة التأشيرة</td>
+            </tr>
+            <tr>
+                <td class="td-label">Visa Purpose</td>
+                <td class="td-value">Employment - توظيف</td>
+                <td class="td-label-ar">الغاية من التأشيرة</td>
+            </tr>
+            <tr>
+                <td class="td-label">Valid Until</td>
+                <td class="td-value">12/10/2027</td>
+                <td class="td-label-ar">صالحة لغاية</td>
+            </tr>
+        </table>
+
+        <!-- Visitor Information Table -->
+        <table>
+            <tr>
+                <th colspan="3">Visitor Information - معلومات الزائر</th>
+            </tr>
+            <tr>
+                <td class="td-label">Full Name</td>
+                <td class="td-value">ROBEL MIAH</td>
+                <td class="td-label-ar">الاسم الكامل</td>
+            </tr>
+            <tr>
+                <td class="td-label">Nationality</td>
+                <td class="td-value">BANGLADESH - بنغلادش</td>
+                <td class="td-label-ar">الجنسية</td>
+            </tr>
+            <tr>
+                <td class="td-label">Birth Date</td>
+                <td class="td-value">01/01/1989</td>
+                <td class="td-label-ar">تاريخ الميلاد</td>
+            </tr>
+            <tr>
+                <td class="td-label">Passport Number</td>
+                <td class="td-value">A13802393</td>
+                <td class="td-label-ar">رقم جواز السفر</td>
+            </tr>
+        </table>
+
+        <!-- Payment Information Table -->
+        <table>
+            <tr>
+                <th colspan="3">Payment Information - معلومات الدفع</th>
+            </tr>
+            <tr>
+                <td class="td-label">Visa Fees</td>
+                <td class="td-value">JOD 300</td>
+                <td class="td-label-ar">رسوم التأشيرة</td>
+            </tr>
+            <tr>
+                <td class="td-label">E-Payment No.</td>
+                <td class="td-value">68164223988128</td>
+                <td class="td-label-ar">رقم الدفع الإلكتروني</td>
+            </tr>
+            <tr>
+                <td class="td-label">Payment Type</td>
+                <td class="td-value">Master Card - ماستر كارد</td>
+                <td class="td-label-ar">طريقة الدفع</td>
+            </tr>
+        </table>
+
+        <!-- Notes -->
+        <div class="notes">
+            <div class="notes-left">
+                <strong>Notes</strong><br>
+                1) This visa was issued based on the information you entered, and you are responsible for its validity. The Jordanian authorities reserve the right to cancel the visa if the data provided is inconsistent with the information on your passport.<br>
+                2) This electronic visa or a copy of it shall be presented to the concerned officer at the border port.<br>
+                3) This visa enables you to stay in Jordan for a period of 90 days from the date of entry, if you wish to extend your stay, please visit the nearest security center to your place of residence.
+            </div>
+            <div class="notes-right">
+                <strong>ملاحظات</strong><br>
+                1) تم منحك هذه التأشيرة بناءً على المعلومات المدخلة من قبلك والتي تتحمل مسؤولية صحتها، وللسلطات الأردنية الحق في إلغاء التأشيرة في حال عدم مطابقتها لمعلومات جواز السفر.<br>
+                2) يجب إبراز هذه التأشيرة إلكترونيا أو صورة عنها للموظف المعني في المركز الحدودي.<br>
+                3) تمكنك هذه التأشيرة من الإقامة في الأردن لمدة 90 يوماً من تاريخ الدخول، وفي حال رغبتك بتمديد فترة الإقامة يرجى مراجعة أقرب مركز أمني لمكان سكنك.
+            </div>
+        </div>
+
+        <!-- Footer / QR Code -->
+        <div class="footer">
+            <div>
+                <!-- Generated QR code representing original URL -->
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://moi.gov.jo/e-applications/info?v=689362366" alt="QR Code">
+            </div>
+            <div style="font-size: 11px;">
+                For any information about E-Visa : moi.gov.joe-applications.info<br>
+                للتواصل حول أي معلومات تتعلق بالتأشيرة الإلكترونية moi.gov.joe-applications.info
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
