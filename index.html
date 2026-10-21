@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-VISA - The Hashemite Kingdom of Jordan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #525659;
+            margin: 0;
+            padding: 20px 0;
+        }
+        
+        /* Action / Control Buttons Bar */
+        .action-bar {
+            max-width: 210mm;
+            margin: 0 auto 15px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 12px 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .action-btn {
+            background-color: #27ae60;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .action-btn:hover {
+            background-color: #219150;
+        }
+
+        .a4-page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10px auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            box-sizing: border-box;
+            position: relative;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #a0a0a0;
+            padding-bottom: 12px;
+        }
+        .header-logo {
+            color: #c0392b;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .header-title-ar {
+            text-align: right;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .header-title-en {
+            text-align: right;
+            font-size: 11px;
+            color: #555;
+        }
+        .title-section {
+            text-align: center;
+            margin: 15px 0;
+        }
+        .title-section h1 {
+            margin: 0;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+        .welcome-text {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            color: #b8860b;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        th {
+            background-color: #6c757d;
+            color: white;
+            padding: 6px 10px;
+            font-size: 13px;
+            text-align: center;
+        }
+        td {
+            border: 1px solid #dee2e6;
+            padding: 6px 10px;
+            font-size: 12px;
+        }
+        .td-label { font-weight: bold; width: 25%; }
+        .td-value { text-align: center; width: 50%; font-weight: 500; }
+        .td-label-ar { text-align: right; font-weight: bold; width: 25%; direction: rtl; }
+        
+        .notes {
+            font-size: 10.5px;
+            line-height: 1.4;
+            color: #222;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .notes-left { width: 48%; }
+        .notes-right { width: 48%; text-align: right; direction: rtl; }
+        
+        .footer {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .footer-text {
+            font-size: 10px;
+            color: #444;
+        }
+
+        /* PAGE 2 STYLES */
+        .promo-text {
+            margin: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+        .promo-left { width: 48%; }
+        .promo-right { width: 48%; text-align: right; direction: rtl; }
+        .emergency-box {
+            border: 1px solid #e74c3c;
+            background-color: #fdf2e9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
+        /* Hide Action Bar on Print/Download */
+        @media print {
+            body { background: none; padding: 0; }
+            .action-bar { display: none !important; }
+            .a4-page { box-shadow: none; margin: 0; page-break-after: always; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ACTION BUTTONS -->
+    <div class="action-bar">
+        <span style="font-size: 14px; color: #333; font-weight: bold;">Jordan e-VISA Document Viewer</span>
+        <button class="action-btn" onclick="window.print()">
+            📥 Download / Print PDF
+        </button>
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="a4-page">
+        <div class="header">
+            <div class="header-logo">
+                eVISA<br>
+                <span style="font-size: 12px; color: #27ae60;">Jordan تأشيرة إلكترونية</span>
+            </div>
+            <div>
+                <div class="header-title-ar">المملكة الأردنية الهاشمية - وزارة الداخلية</div>
+                <div class="header-title-en">The Hashemite Kingdom of Jordan - Ministry of Interior</div>
+            </div>
+        </div>
+
+        <div class="title-section">
+            <h1>e-VISA - تأشيرة إلكترونية</h1>
+        </div>
+
+        <div class="welcome-text">
+            <span>Welcome to Jordan</span>
+            <span>اهلا وسهلا بكم في الأردن</span>
+        </div>
+
+        <!-- Visa Info -->
+        <table>
+            <tr><th colspan="3">Visa Information - معلومات التأشيرة</th></tr>
+            <tr><td class="td-label">Visa Number</td><td class="td-value">689362484</td><td class="td-label-ar">رقم التأشيرة</td></tr>
+            <tr><td class="td-label">Visa Type</td><td class="td-value">Work Visa - تأشيرة عمل</td><td class="td-label-ar">نوع التأشيرة</td></tr>
+            <tr><td class="td-label">Date of Issue</td><td class="td-value">20/10/2026</td><td class="td-label-ar">تاريخ الإصدار</td></tr>
+            <tr><td class="td-label">Visa Period</td><td class="td-value">Three Months - Double Entry - ثلاثة أشهر - الدخول المزدوج</td><td class="td-label-ar">مدة التأشيرة</td></tr>
+            <tr><td class="td-label">Visa Purpose</td><td class="td-value">Employment - توظيف</td><td class="td-label-ar">الغاية من التأشيرة</td></tr>
+            <tr><td class="td-label">Valid Until</td><td class="td-value">20/10/2027</td><td class="td-label-ar">صالحة لغاية</td></tr>
+        </table>
+
+        <!-- Visitor Info -->
+        <table>
+            <tr><th colspan="3">Visitor Information - معلومات الزائر</th></tr>
+            <tr><td class="td-label">Full Name</td><td class="td-value">MD ASRAFUL SARDAR</td><td class="td-label-ar">الاسم الكامل</td></tr>
+            <tr><td class="td-label">Nationality</td><td class="td-value">BANGLADESH - بنغلادش</td><td class="td-label-ar">الجنسية</td></tr>
+            <tr><td class="td-label">Birth Date</td><td class="td-value">01/01/1997</td><td class="td-label-ar">تاريخ الميلاد</td></tr>
+            <tr><td class="td-label">Passport Number</td><td class="td-value">A16767727</td><td class="td-label-ar">رقم جواز السفر</td></tr>
+        </table>
+
+        <!-- Payment Info -->
+        <table>
+            <tr><th colspan="3">Payment Information - معلومات الدفع</th></tr>
+            <tr><td class="td-label">Visa Fees</td><td class="td-value">JOD 300</td><td class="td-label-ar">رسوم التأشيرة</td></tr>
+            <tr><td class="td-label">E-Payment No.</td><td class="td-value">68164223981099</td><td class="td-label-ar">رقم الدفع الإلكتروني</td></tr>
+            <tr><td class="td-label">Payment Type</td><td class="td-value">Master Card - ماستر كارد</td><td class="td-label-ar">طريقة الدفع</td></tr>
+        </table>
+
+        <!-- Notes -->
+        <div class="notes">
+            <div class="notes-left">
+                <strong>Notes</strong><br>
+                1) This visa was issued based on the information you entered, and you are responsible for its validity.<br>
+                2) This electronic visa or a copy of it shall be presented to the concerned officer at the border port.<br>
+                3) This visa enables you to stay in Jordan for a period of 90 days from the date of entry.
+            </div>
+            <div class="notes-right">
+                <strong>ملاحظات</strong><br>
+                1) تم منحك هذه التأشيرة بناءً على المعلومات المدخلة من قبلك والتي تتحمل مسؤولية صحتها.<br>
+                2) يجب إبراز هذه التأشيرة إلكترونيا أو صورة عنها للموظف المعني في المركز الحدودي.<br>
+                3) تمكنك هذه التأشيرة من الإقامة في الأردن لمدة 90 يوماً من تاريخ الدخول.
+            </div>
+        </div>
+
+        <div class="footer">
+            <img id="qr1" src="" alt="QR Code" width="110" height="110">
+            <div class="footer-text">
+                For any information about E-Visa : moi.gov.
